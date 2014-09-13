@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Converting ax^3+bx^2+cx+d to t^3+pt+q</title>
+  <meta charset="UTF-8">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      displayAlign: "left"
+    });
+  </script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+  </script>
+  <link rel="stylesheet" type="text/css" href="mathjax.css">
+</head>
+
+<body>
+<h1>Converting $ax^3+bx^2+cx+d$ to $t^3+pt+q$</h1>
+\[
+\def \l {\left}
+\def \r {\right}
+\def \f {\frac}
+
+ax^3+bx^2+cx+d = 0 \\
+
+\def \x {t-\f{b}{3a}}
+x = \x \\
+
+\def \bx {\l(\x\r)}
+a\bx^3 + b\bx^2 + c\bx + d = 0 \\
+
+a\l(t^3-\f{b}{a}t^2+\f{b^2}{3a^2}t-\f{b^3}{27a^3}\r)
++ b\l(t^2-\f{2b}{3a}t+\f{b^2}{9a^2}\r)
++ c\l(t-\f{b}{3a}\r) + d = 0 \\
+
+t^3-\f{b}{a}t^2+\f{b^2}{3a^2}t-\f{b^3}{27a^3}
++ \f{b}{a}t^2-\f{2b^2}{3a^2}t+\f{b^3}{9a^3}
++ \f{c}{a}t-\f{bc}{3a^2} + \f{d}{a} = 0 \\
+
+t^3+\f{b^2}{3a^2}t-\f{2b^2}{3a^2}t+\f{c}{a}t
+- \f{b^3}{27a^3}+\f{b^3}{9a^3}-\f{bc}{3a^2}+\f{d}{a} = 0 \\
+
+t^3+\f{b^2}{3a^2}t-\f{2b^2}{3a^2}t+\f{c}{a}t
+- \f{b^3}{27a^3}+\f{b^3}{9a^3}-\f{bc}{3a^2}+\f{d}{a} = 0 \\
+
+t^3+\f{b^2}{3a^2}t-\f{2b^2}{3a^2}t+\f{c}{a}t
+- \f{b^3}{27a^3}+\f{b^3}{9a^3}-\f{bc}{3a^2}+\f{d}{a} = 0 \\
+
+\]
+</body>
+
+</html>
