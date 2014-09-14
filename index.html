@@ -17,11 +17,31 @@
 </head>
 
 <body>
+<div style="display: none">
+\(
+\def \l {\left}
+\def \r {\right}
+\def \f {\frac}
+
+\def \b#1{\l(#1\r)}
+
+\def \root [#1]#2{\sqrt[\leftroot{2}\uproot{2}\scriptstyle #1]{#2}}
+
+\def \p {\phantom}
+
+\require{enclose}
+
+\DeclareMathOperator{\acoth}{acoth}
+\everymath{\displaystyle}
+\)
+</div>
 <h1>Math Papers</h1>
 <ul>
 <li><a href="depress-cubic.html">Converting $ax^3+bx^2+cx+d$ to $t^3+pt+q$</a></li>
 <li><a href="cubic-formula1.html">Cubic Formula 1</a></li>
 <li><a href="cubic-formula2.html">Cubic Formula 2</a></li>
+<li><a href="sum-acoth-i.html">Show that $\sum\limits_{i=2}^n \acoth i = \f{1}{2} \ln \f{n(n+1)}{2}$</a></li>
+<li><a href="denest-sqrt.html">Denesting $\sqrt{x\pm\sqrt{y}}$</a></li>
 </ul>
 </body>
 
