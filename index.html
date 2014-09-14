@@ -9,6 +9,16 @@
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
       displayAlign: "left"
     });
+    MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      var PREFILTER = TEX.prefilterMath;
+      TEX.Augment({
+        prefilterMath: function (math,displaymode,script) {
+          math = "\\displaystyle{"+math+"}";
+          return PREFILTER.call(TEX,math,displaymode,script);
+        }
+      });
+    });
   </script>
   <script type="text/javascript"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -27,12 +37,7 @@
 
 \def \root [#1]#2{\sqrt[\leftroot{2}\uproot{2}\scriptstyle #1]{#2}}
 
-\def \p {\phantom}
-
-\require{enclose}
-
 \DeclareMathOperator{\acoth}{acoth}
-\everymath{\displaystyle}
 \)
 </div>
 <h1>Math Papers</h1>
