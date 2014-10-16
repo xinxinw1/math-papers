@@ -17,3 +17,7 @@ a {text-decoration: underline; color: #000000;}
 
 hr {height: 1px; color: #888; background-color: #888; margin-top: 10px; margin-bottom: 10px;}
 .titlehr {margin-top: 0;}
+
+p {margin-bottom: 10px;}
+
+p.conv {font-style: italic;}

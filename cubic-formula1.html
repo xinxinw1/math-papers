@@ -18,7 +18,7 @@
 
 <body>
 <h1>Cubic Formula 1</h1>
-<p class="date">before Sep. 13, 2014</p>
+<p class="date">Pub: Sep. 13, 2014 | Wri: a few years ago</p>
 <hr class="titlehr">
 \[
 \def \l {\left}
@@ -26,6 +26,16 @@
 \def \f {\frac}
 
 \def \b#1{\l(#1\r)}
+
+\def \und#1{\style{text-decoration: underline}{#1}}
+\def \link#1#2{\und{\href{#1}{#2}}}
+\def \tlink#1#2{\link{#1}{\text{#2}}}
+
+\def \lq {\unicode{x201C}}
+\def \rq {\unicode{x201D}}
+\def \qt#1{\lq #1 \rq}
+
+\text{Note: This derivation is based on steps found at $\link{http://www.sosmath.com/algebra/factor/fac11/fac11.html}{\text{The }\qt{\text{Cubic Formula}}\text{ - SOS Math}}$ and other sites.} \\[6pt] 
 
 t^3+pt+q = 0 \\[6pt]
 
@@ -94,10 +104,6 @@ t_1 & = u+v \text{, take real cube root} \\
 t_2 & = -\f{1}{2}(u+v) + \f{\sqrt{3}}{2}(u-v)i \\
 t_3 & = -\f{1}{2}(u+v) - \f{\sqrt{3}}{2}(u-v)i
 \end{split} \\[33pt]
-
-\def \und#1{\style{text-decoration: underline}{#1}}
-\def \link#1#2{\und{\href{#1}{#2}}}
-\def \tlink#1#2{\link{#1}{\text{#2}}}
 
 \text{For derivation of $t_2$ and $t_3$, see $\tlink{cubic-formula2.html}{Cubic Formula 2}$} 
 
